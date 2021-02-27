@@ -128,6 +128,26 @@ def select_unassigned_variable(csp, assignment):
 
     return unassigned_vars[min_pos]
 
+
+
+# def arrange_domain_values(csp, assignment, var):
+    '''
+    Least Constraining Value Heuristic
+    this will take in the vertex that was just chosen and provide
+    an ordering of options from the domain of that vertex that
+    will least limit the flexibility of the neighbors of that vertex
+    '''
+    # var is currently a single vertex
+    # so we need to go through it's neighbors
+    # edges = csp["CONSTRAINTS"]
+
+    # for edge in edges:
+        # if edge[0] == var:
+
+
+    # return a sorted list of the domain elemnts avai
+
+    
 # TODO: add in AC-3
 def is_consistent(assignment, constraints):
     global counter
